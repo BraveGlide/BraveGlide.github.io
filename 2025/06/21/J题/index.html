@@ -17,22 +17,24 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>Hello World! - BraveGlide</title>
+  <title>问题记录 - BraveGlide</title>
 
   
-    <meta name="description" content="Hexo博客终于搭建成功了，纪念一下！">
+    <meta name="description" content="题目描述 需求分析📙问题大全和解决方法ADC采样率怎么确定根据奈奎斯特定理得出，ADC采样率至少要是采集目标频率的2倍，一般建议采样频率设置为5~10倍或更高。 ADC采样率是越高越好吗当然不是，不过高采样率不会影响低频信号的准确度（我当时采集1Hz信号时一直不对，怀疑过这里，不过经过验证，跟高采样率无关）。 ADC的谐波怎么提取将FFT处理后的结果进行排序，除去最大值基波，然后其他的就是谐波。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World!">
-<meta property="og:url" content="http://example.com/2022/09/20/hello-world/index.html">
+<meta property="og:title" content="问题记录">
+<meta property="og:url" content="http://example.com/2025/06/21/J%E9%A2%98/index.html">
 <meta property="og:site_name" content="BraveGlide">
-<meta property="og:description" content="Hexo博客终于搭建成功了，纪念一下！">
+<meta property="og:description" content="题目描述 需求分析📙问题大全和解决方法ADC采样率怎么确定根据奈奎斯特定理得出，ADC采样率至少要是采集目标频率的2倍，一般建议采样频率设置为5~10倍或更高。 ADC采样率是越高越好吗当然不是，不过高采样率不会影响低频信号的准确度（我当时采集1Hz信号时一直不对，怀疑过这里，不过经过验证，跟高采样率无关）。 ADC的谐波怎么提取将FFT处理后的结果进行排序，除去最大值基波，然后其他的就是谐波。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-20T07:13:14.000Z">
-<meta property="article:modified_time" content="2025-04-17T05:20:05.212Z">
+<meta property="og:image" content="https://pic1.imgdb.cn/item/67d2d9c988c538a9b5bc85fb.png">
+<meta property="article:published_time" content="2025-06-21T08:26:29.084Z">
+<meta property="article:modified_time" content="2025-04-08T16:03:23.000Z">
 <meta property="article:author" content="BraveGlide">
 <meta property="article:tag" content="嵌入式">
 <meta property="article:tag" content="Linux">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.imgdb.cn/item/67d2d9c988c538a9b5bc85fb.png">
   
   
   
@@ -78,19 +80,68 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2022-09-20T07:13:14.000Z">2022-09-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-04-17T05:20:05.212Z">2025-04-17</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%BB%8F%E9%AA%8C%E9%97%B2%E8%B0%88/">经验闲谈</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-21T08:26:29.084Z">2025-06-21</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-04-08T16:03:23.000Z">2025-04-09</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>Hello World!</span></h1>
+        <h1 class="text title"><span>问题记录</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><p>Hexo博客终于搭建成功了，纪念一下！</p>
+  </div><article class="md-text content"><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://pic1.imgdb.cn/item/67d2d9c988c538a9b5bc85fb.png" alt="题目描述1"></p>
+<h2 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h2><h2 id="📙问题大全和解决方法"><a href="#📙问题大全和解决方法" class="headerlink" title="📙问题大全和解决方法"></a>📙问题大全和解决方法</h2><h3 id="ADC采样率怎么确定"><a href="#ADC采样率怎么确定" class="headerlink" title="ADC采样率怎么确定"></a>ADC采样率怎么确定</h3><p>根据奈奎斯特定理得出，ADC采样率至少要是采集目标频率的2倍，一般建议采样频率设置为5~10倍或更高。</p>
+<h3 id="ADC采样率是越高越好吗"><a href="#ADC采样率是越高越好吗" class="headerlink" title="ADC采样率是越高越好吗"></a>ADC采样率是越高越好吗</h3><p>当然不是，不过高采样率不会影响低频信号的准确度（我当时采集1Hz信号时一直不对，怀疑过这里，不过经过验证，跟高采样率无关）。</p>
+<h3 id="ADC的谐波怎么提取"><a href="#ADC的谐波怎么提取" class="headerlink" title="ADC的谐波怎么提取"></a>ADC的谐波怎么提取</h3><p>将FFT处理后的结果进行排序，除去最大值基波，然后其他的就是谐波。</p>
+<h3 id="怎么根据谐波来确定波形的类型"><a href="#怎么根据谐波来确定波形的类型" class="headerlink" title="怎么根据谐波来确定波形的类型"></a>怎么根据谐波来确定波形的类型</h3><h4 id="根据谐波判断"><a href="#根据谐波判断" class="headerlink" title="根据谐波判断"></a>根据谐波判断</h4><ul>
+<li><strong>正弦波</strong>: 各次谐波幅度几乎为零。</li>
+<li><strong>方波</strong>：基波幅度最大，奇次谐波幅度按$\frac{1}{2}$（n为谐波次数）规律衰减，如三次谐波幅度约为基波的$\frac{1}{3}$，五次谐波约为$\frac{1}{5}$。</li>
+<li><strong>三角波</strong>：基波幅度较大，奇次谐波幅度按$\frac{1}{n^2}$规律衰减，所以三次谐波幅度约为基波的$\frac{1}{9}$，五次谐波约为$\frac{1}{25}$。</li>
+</ul>
+<h4 id="根据RMS算法来判断"><a href="#根据RMS算法来判断" class="headerlink" title="根据RMS算法来判断"></a>根据RMS算法来判断</h4><p>这里遇到一点小问题，采样率大于波形频率的两倍就能完美采集波形，但是进行RMS计算的话采样率最好大于波形频率5～10倍，这是我的一个经验之谈，并没有合适的依据，我通过实验得出计算RMS值的话要准确的话采样率最好大于波形频率5～10倍，2倍计算出的RMS不准确。</p>
+<ul>
+<li><strong>正弦波</strong>：纯正弦波信号 RMS 值与峰值关系为$V_{RMS}&#x3D;\frac{V_{peak}}{\sqrt{2}}$ 。测量信号 RMS 值，若与按此公式依峰值算出的结果相近，且频谱分析谐波含量极低，可判断为正弦波。</li>
+<li><strong>方波</strong>：方波 RMS 值等于幅值，即$V_{RMS}&#x3D;A$。测量信号幅值与 RMS 值，若二者相等，且频谱呈现基波幅度最大、奇次谐波幅度按$\frac{1}{n}$n 为谐波次数）规律衰减，可判断为方波。</li>
+<li><strong>三角波</strong>：三角波 RMS 值与峰值关系为$V_{RMS}&#x3D;\frac{V_{peak}}{\sqrt{3}}$ 。测量信号 RMS 值，若符合此关系，且频谱中基波幅度较大、奇次谐波幅度按规律衰减，可判断为三角波。</li>
+</ul>
+<h3 id="高采样率采集低频信号误差大"><a href="#高采样率采集低频信号误差大" class="headerlink" title="高采样率采集低频信号误差大"></a>高采样率采集低频信号误差大</h3><p>在尝试用1Mhz的采样率采集50Hz信号时，偏差超级大，是ADC没有采集到完全的波形嘛？并不是，是高采样率加重了计算的误差，所以要采集50Hz~50Khz的信号的话应该对信号进行分档，这样的话会减少计算的误差。</p>
+<h3 id="低频信号采样转换速度慢"><a href="#低频信号采样转换速度慢" class="headerlink" title="低频信号采样转换速度慢"></a>低频信号采样转换速度慢</h3><p>在采集1~10Hz的信号时，采样和转换的速度很慢，曾让我误以为是定时器配置错了，后面一思考，应该是采样点数和采样频率影响的。这里我降低了采样点数，由1024-&gt;128，速度一下就快起来了，这里由可以根据频率来确定采样点数了。</p>
+<h4 id="挡位分配"><a href="#挡位分配" class="headerlink" title="挡位分配"></a>挡位分配</h4><p>这里档位分配可以再细一点，我参考了示波器上的档位分配，1 2 5 10这么几个规律，然后总结了出合理的档位分配。</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">频率区间</th>
+<th align="center">ADC采样率</th>
+<th align="center">ADC采集点数</th>
+<th align="center">分频系数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">低速挡</td>
+<td align="center">50Hz~500Hz</td>
+<td align="center">2500Hz</td>
+<td align="center">2048</td>
+<td align="center">400</td>
+</tr>
+<tr>
+<td align="center">中速档</td>
+<td align="center">500Hz~5Khz</td>
+<td align="center">25Khz</td>
+<td align="center">4096</td>
+<td align="center">40</td>
+</tr>
+<tr>
+<td align="center">高速档</td>
+<td align="center">5Khz~50Khz</td>
+<td align="center">250Khz</td>
+<td align="center">4096</td>
+<td align="center">4</td>
+</tr>
+</tbody></table>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -100,7 +151,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2022/09/21/Termux%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8CSpringBoot/">Termux编译运行SpringBoot</a></div><div class="item" id="next"></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2025/06/21/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">安卓开发踩坑记录</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/06/15/%E9%9F%B3%E4%B9%90%E6%8E%A8%E8%8D%90/">音乐推荐</a></div></section></div>
 
 
 
@@ -125,7 +176,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">BraveGlide</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">需求分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%99%E9%97%AE%E9%A2%98%E5%A4%A7%E5%85%A8%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-text">📙问题大全和解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ADC%E9%87%87%E6%A0%B7%E7%8E%87%E6%80%8E%E4%B9%88%E7%A1%AE%E5%AE%9A"><span class="toc-text">ADC采样率怎么确定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ADC%E9%87%87%E6%A0%B7%E7%8E%87%E6%98%AF%E8%B6%8A%E9%AB%98%E8%B6%8A%E5%A5%BD%E5%90%97"><span class="toc-text">ADC采样率是越高越好吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ADC%E7%9A%84%E8%B0%90%E6%B3%A2%E6%80%8E%E4%B9%88%E6%8F%90%E5%8F%96"><span class="toc-text">ADC的谐波怎么提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E6%A0%B9%E6%8D%AE%E8%B0%90%E6%B3%A2%E6%9D%A5%E7%A1%AE%E5%AE%9A%E6%B3%A2%E5%BD%A2%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">怎么根据谐波来确定波形的类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B9%E6%8D%AE%E8%B0%90%E6%B3%A2%E5%88%A4%E6%96%AD"><span class="toc-text">根据谐波判断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%B9%E6%8D%AERMS%E7%AE%97%E6%B3%95%E6%9D%A5%E5%88%A4%E6%96%AD"><span class="toc-text">根据RMS算法来判断</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E9%87%87%E6%A0%B7%E7%8E%87%E9%87%87%E9%9B%86%E4%BD%8E%E9%A2%91%E4%BF%A1%E5%8F%B7%E8%AF%AF%E5%B7%AE%E5%A4%A7"><span class="toc-text">高采样率采集低频信号误差大</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8E%E9%A2%91%E4%BF%A1%E5%8F%B7%E9%87%87%E6%A0%B7%E8%BD%AC%E6%8D%A2%E9%80%9F%E5%BA%A6%E6%85%A2"><span class="toc-text">低频信号采样转换速度慢</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%A1%E4%BD%8D%E5%88%86%E9%85%8D"><span class="toc-text">挡位分配</span></a></li></ol></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -754,6 +812,26 @@
       })
     }
   });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
